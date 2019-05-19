@@ -27,6 +27,16 @@ module.exports = {
     LIST_SUCCESS : "리스트 저장 성공",
     LIST_DELETE_FAILE : "리스트 삭제 실패",
     LIST_DELETE_SUCCESS : "리스트 삭제 성공",
+    ALL_LIST_SUCCESS : "모든 리스트 가져오기 성공",
+    ALL_LSIT_FAIL : "모든 리스트 가져오기 실패",
+    EXPIRE_LIST_SUCCESS : "마감 기한 지난 리스트 가져오기 성공",
+    EXPIRE_LIST_FAIL : "마감 기한 지난 리스트 가져오기 실패",
+    EXPIRE_LIST_EMPTY : "마감 기한 지난 리스트 없음",
+    A_LIST_SUCCESS : "리스트 가져오기 성공",
+    A_LIST_FAIL : "리스트 가져오기 실패",
+    COMPELTE_UPDATE_FAIL : "완료 업데이트 실패",
+    COMPELTE_UPDATE_SUCCESS : "완료 업데이트 성공",
+    
 
     STUDENT_SELECT_SUCCESS: "학생 조회 성공",
     NO_STUDENT: "존재하지 않는 학생입니다",
