@@ -11,7 +11,7 @@ router.use('/all',require('./all'));
 router.use('/expire',require('./expire'));
 router.use('/complete',require('./complete'));
 
-// /list/
+// /list
 router.post('/',async(req,res)=>{
     // list 생성
     // 필수 필요한 것, title,content
@@ -50,8 +50,9 @@ router.post('/',async(req,res)=>{
 })
 
 // 수정은 어떻게 할건지 나중에
-router.put('/:idx',async(req,res)=>{
-    let idx = req.params.idx;
+router.post('/modiy',async(req,res)=>{
+    console.log(req.body);
+    let idx = req.body.idx;
     let title  = req.body.title;
     let content =req.body.content;
     let prior = req.body.prior ||null;
@@ -84,10 +85,11 @@ router.put('/:idx',async(req,res)=>{
     
 
 //삭제 
-router.delete('/:idx' ,async(req,res)=>{
-    let idx = req.params.idx;
-    if(!idx){
-
+router.post('/delete' ,async(req,res)=>{
+    let idx = req.body.idx;
+    console.log(idx);
+    if(idx<=0){
+        
     }else{
         let deleteQuery = 'DELETE FROM summer.todolist WHERE idx = ?';
         let deleteResult;

@@ -7,9 +7,9 @@ const util = require('../../module/utils');
 
 // /list/complete/:idx
 
-router.get('/:idx', async(req,res)=>{
+router.post('/', async(req,res)=>{
     
-    let idx = req.params.idx;
+    let idx = req.body.idx;
     let getIdxListQuery = 'select * from summer.todolist WHERE idx=?';
     let getIdxListResult;
     
