@@ -127,3 +127,22 @@ $npm start
 1. TodoList 수정시 modify누르고 취소 누르기
 2. 날짜 입력은 05-25 (5월 25일)이런식으로
 
+![main](./photo/main.png)
+- 메인 TodoList
+
+![newlist](./photo/newList.png)
+- 새로운 TodoList 추가
+- pluse 버튼 클릭
+
+![addNewList](./photo/addNewList.png)
+- 새로운 TodoList 입력
+
+![newListCheck](./photo/newListCheck.png)
+- 새로운 TodoList 추가 확인
+
+![remove](./photo/remove.png)
+- TodoList 지우기, 수정하기
+
+![remove](./photo/removeCheck.png)
+- 지워진 것 확인
+
